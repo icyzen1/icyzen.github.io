@@ -109,6 +109,7 @@ ul {
 
 ol {
     padding-left: 16px;
+	margin-bottom: 14px;
 }
 
 .date {
@@ -131,4 +132,5 @@ ol {
     display: inline-block;
     margin-left: 18px;
     font-size: 24px;
+
 }
