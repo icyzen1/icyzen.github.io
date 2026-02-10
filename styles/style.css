@@ -9,13 +9,17 @@ body {
 }
 
 .page-container-portfolio {
-    margin: 20px auto 0;
+    text-align: center;
+    width: 100%;
 }
 
 .page-container {
     display: inline-block;
+    text-align: left;
+    vertical-align: top;
+    margin: 20px 0 auto;
 	max-width: 980px;
-    margin: 20px auto 0;
+    width:100%;
 }
 
 .left-side {
@@ -127,11 +131,13 @@ ol {
 
 .menu {
     max-width: 900px;
+    position: relative;
+    left: 50px;
 	margin: 20px auto 0;
     background-color: rgb(167, 163, 163);
-    text-align: center;
     border-radius: 15px;
 }
+
 .menu li{
     display: inline-block;
     margin-left: 18px;
@@ -142,7 +148,7 @@ ol {
 .portfolio {
     display: inline-block;
     font-family: Arial, sans-serif;
-    width: 300px;
+    width: 250px;
     vertical-align: top;
     background-color: white;
     border: 1px solid #000;
@@ -150,8 +156,10 @@ ol {
     background-color: rgb(167, 163, 163);
     color: white;
     font-family: 'Segoe UI', sans-serif;
-    margin: 20px;
-    margin-right: 140px;
+    margin: 40px 40px 0 0;
+    margin-right: -150px; 
+    position: relative;
+    left: -200px;
 }
 
 .btn {
@@ -184,4 +192,3 @@ a:hover {
     text-align: center;
     margin-top: 5px;
 }
-
