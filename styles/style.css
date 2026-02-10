@@ -8,6 +8,10 @@ body {
     background-color: #c1bdbd;
 }
 
+.page-container-portfolio {
+    margin: 20px auto 0;
+}
+
 .page-container {
     display: inline-block;
 	max-width: 980px;
@@ -180,3 +184,4 @@ a:hover {
     text-align: center;
     margin-top: 5px;
 }
+
