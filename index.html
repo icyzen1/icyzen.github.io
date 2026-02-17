@@ -7,21 +7,23 @@
     <title>Resume</title>
 </head>
 <body>
-    <div class = "menu">
-        <ul>
-            <li><a href="#experience" class = "btn">Досвід роботи</a></li>
-            <li><a href="#education" class = "btn">Освіта і кваліфікація</a></li>
-            <li><a href="#skills" class = "btn">Навички</a></li>
-            <li><a href="#work" class = "btn">Мої роботи</a></li>
-        </ul>
-    </div>
+    <header>
+        <nav class = "menu">
+            <ul>
+                <li><a href="#experience" class = "btn">Досвід роботи</a></li>
+                <li><a href="#education" class = "btn">Освіта і кваліфікація</a></li>
+                <li><a href="#skills" class = "btn">Навички</a></li>
+                <li><a href="#work" class = "btn">Мої роботи</a></li>
+            </ul>
+        </nav>
+    </header>
     <div class = "page-container-portfolio">
-        <div class = "portfolio" id = "portfolio">
+        <aside class = "portfolio" id = "portfolio">
             <h2>Portfolio</h2>
-            <a href="lab1/" class = "btn">Лаб. робота №1</a>
+            <a href="lab1/index.html" class = "btn">Лаб. робота №1</a>
             <a href="index.html" class = "btn">Лаб. робота №2</a>
             <a href="#portfolio" class = "btn">Лаб. робота №3</a>
-            <a href="#" onclick="alert('Цю лабораторну ще не робили')" class = "btn">Лаб. робота №4</a>
+            <a href="index.html" class = "btn">Лаб. робота №4</a>
             <a href="#" onclick="alert('Цю лабораторну ще не робили')" class = "btn">Лаб. робота №5</a>
             <a href="#" onclick="alert('Цю лабораторну ще не робили')" class = "btn">Лаб. робота №6</a>
             <a href="#" onclick="alert('Цю лабораторну ще не робили')" class = "btn">Лаб. робота №7</a>
@@ -29,27 +31,29 @@
             <a href="#" onclick="alert('Цю лабораторну ще не робили')" class = "btn">Лаб. робота №9</a>
             <a href="#" onclick="alert('Цю лабораторну ще не робили')" class = "btn">Лаб. робота №10</a>
             <a href="#" onclick="alert('Цю лабораторну ще не робили')" class = "btn">Лаб. робота №11</a>
-        </div>
+        </aside>
     <div class="page-container">
 	    <div class="left-side">
-            <div class = "avatar">
+            <figure class = "avatar">
                 <img src="images/1.jpg" alt="Ростислав Ринкасовський" class = "profile">
-            </div>
-            <div class = "personal-info">
+            </figure>
+            <section class = "personal-info">
                 <h3><strong>Особисті дані</strong></h3>
                 <hr>
-                <p class = "label"><b>Ім'я</b></p>
-                <p class = "info">Ростислав Ринкасовський</p>
-                <p class = "label"><b>Адреса</b></p>
-                <p class = "info">вул.Симоненка, буд.5, кв.12</p>
-                <p class = "label"><b>Номер телефону</b></p>
-                <p class = "info">+38 066 916-38-86</p>
-                <p class = "label"><b>Email</b></p>
-                <p class = "info">rinkasovskii@gmail.com</p>
-                <p class = "label"><b>Дата народження</b></p>
-                <p class = "info">23.06.2008</p>
-            </div>
-            <div class = "interests">
+                <address>
+                    <p class = "label"><b>Ім'я</b></p>
+                    <p class = "info">Ростислав Ринкасовський</p>
+                    <p class = "label"><b>Адреса</b></p>
+                    <p class = "info">вул.Симоненка, буд.5, кв.12</p>
+                    <p class = "label"><b>Номер телефону</b></p>
+                    <p class = "info">+38 066 916-38-86</p>
+                    <p class = "label"><b>Email</b></p>
+                    <p class = "info">rinkasovskii@gmail.com</p>
+                    <p class = "label"><b>Дата народження</b></p>
+                    <p class = "info"><time datetime="2008-06-23">23.06.2008</time></p>
+                </address>
+            </section>
+            <section class = "interests">
                 <h3><strong>Інтереси</strong></h3>
                 <hr>
                 <ul>
@@ -57,39 +61,45 @@
                     <li>Вивчення об'єктно-реляційних програм</li>
                     <li>Футбол</li>
                 </ul>
-            </div>
-            <div class = "language">
+            </section>
+            <section class = "language">
                 <h3><strong>Мови</strong></h3>
                 <hr>
                 <span><b>Англійська</b></span>
                 <span class = "level">Середній рівень</span>
                 <span><b>Українська</b></span>
                 <span class = "level">Рідна мова</span>
-            </div>
+            </section>
         </div><div class="right-side">
+            <header>
             <h1><strong>Ростислав Ринкасовський</strong></h1>
+            </header>
             <hr>
             <section id = "experience" class = "experience">
                 <h2><strong>Досвід роботи</strong></h2>
                 <hr>
-                <div class = "entry">
-                    <span class = "position"><b>MySQL-розробник</b></span>
-                    <span class = "date">вер 2025 - груд 2025</span>
+                <article class = "entry">
+                    <header>
+                        <span class = "position"><b>MySQL-розробник</b></span>
+                        <time class = "date">вер 2025 - груд 2025</time>
+                    </header>
                     <p>ФКЕП ІФНТУНГ, Івано-Франківськ</p>
                     <p>Розробка архітектури баз даних, оптимізація SQL-запитів та проектування структури системи обліку результатів тестування студентів відповідно до вимог технічного завдання</p>
-                </div>
-                <div class = "entry">
-                    <span class = "position"><b>Практика по C++</b></span>
-                    <span class = "date">чер 2025 - лип 2025</span>
+                </article>
+                <article class = "entry">
+                    <header>
+                        <span class = "position"><b>Практика по C++</b></span>
+                        <time class = "date">чер 2025 - лип 2025</time>
+                    </header>
                     <p>ФКЕП ІФНТУНГ, Івано-Франківськ</p>
                     <p>Розробка алгоритмів обробки даних, проектування базових класів та розв'язання прикладних задач на мові C++ відповідно до вимог технічного завдання</p>
-                </div>
+                </article>
             </section>
             <section id = "education" class = "education">
                 <h2><strong>Освіта і кваліфікація</strong></h2>
                 <hr>
                 <span><b>Повна середня освіта</b></span>
-                <span class = "date">вер 2014 - черв 2023</span>
+                <time class = "date">вер 2014 - черв 2023</time>
                 <p>Підберезька гімназія, Підбережжя</p>
             </section>
             <section id = "skills" class = "skills">
@@ -110,9 +120,3 @@
     </div>
 </body>
 </html>
-
-
-
-
-
-
