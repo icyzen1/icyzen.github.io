@@ -135,6 +135,7 @@ ol {
     left: 50px;
 	margin: 20px auto 0;
     background-color: rgb(167, 163, 163);
+	border: 1px solid #000;
     border-radius: 15px;
 }
 
@@ -192,3 +193,4 @@ a:hover {
     text-align: center;
     margin-top: 5px;
 }
+
