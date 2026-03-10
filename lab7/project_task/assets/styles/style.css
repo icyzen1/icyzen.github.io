@@ -1,0 +1,124 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Inter", sans-serif; /*задається шрифт типу "Інтер" для документа*/
+}
+
+img {
+	display: block; /*перетворення зображення на блоковий елемент*/
+	width: 100%;
+}
+
+.page-wrapper {
+	max-width: 860px; /*максимальний розмір документа*/
+	width: 100%; /*розтягує весь текст в документі на всю ширину*/
+	margin: 40px;
+	padding: 30px 10px 20px; /*внутрішній відступ зверху, справа та знизу*/
+	background-color: #008499;
+}
+
+.content-wrap {
+	padding: 0 20px 20px;
+	background-color: #fff;
+}
+
+header {
+	height: 138px;
+	background-image: url(../images/header.png);
+	background-repeat: no-repeat; /*заборона для повторення зображення*/
+	background-size: contain; /*розмір зображення на весь блок*/
+	background-position: center; /*розміщення зображення по середині блоку*/
+}
+
+main {
+	padding: 20px 30px; /*внутрішній відступ зверху та справа*/
+	font-weight: 500;
+	font-size: 1.2rem; /*розмір шрифта*/
+}
+
+.mb-15 {
+	margin-bottom: 15px;
+}
+
+.mb-20 {
+	margin-bottom: 20px;
+}
+
+.d-block {
+	display: block;
+}
+
+.t-center {
+	text-align: center;
+}
+
+.list { 
+	padding-left: 60px; /*внутрішній відступ зліва*/
+}
+
+.services-list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+}
+
+.services-list-item {
+	width: calc(30%); /*розміщення трьох зображень в ряд*/
+}
+
+.services-list-item__title {
+	padding: 15px 0; /*внутрішній відступ зверху та по нулю для усіх інших*/
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+
+.btn {
+	height: 50px;
+	/*(*_*_*)*/
+	line-height: 50px;
+	background-color: #f53947;
+	color: #fff;
+	cursor: pointer;
+}
+
+.text-section a[href^='tel:'] {
+	text-decoration: none;
+	color: black;
+}
+
+.link-btn {
+	text-decoration: none;
+}
+
+footer {
+	padding: 25px 0;
+	background-color:#008499;
+	color: #fff;
+}
+
+.social-links {
+	font-size: 2rem;
+}
+
+.social-links a {
+	color: #fff;
+	text-decoration: none;
+}
+
+
+.social-links a:not(:last-child) /*застосування відступу для всіх тегів а крім останнього*/ {
+	margin-right: 20px;
+}
+
+footer p:nth-child(2) /*вибирає другий за рахунком абзац параграфа*/ {
+	font-weight: bold;
+}
+
+footer p:last-child a /*задаються властивості для останнього тегу а в параграфі */ {
+	color: white;
+	font-weight: bold;
+}
