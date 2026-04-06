@@ -136,6 +136,10 @@
     margin-top: 50px;
 }
 
+.float_table2 * {
+    box-sizing: border-box;
+}
+
 .float_table2 .header {
     background-color: rgb(32, 143, 30);
     color: white;
@@ -145,13 +149,12 @@
 .cell2 {
     float: left;
     border: 1px solid;
-    width: 16.46%;
-    background-color: rgb(152, 210, 152);;
-    white-space: nowrap;
+    width: 16.66%;
+    background-color: rgb(152, 210, 152);
 }
 
 .cell2:nth-child(even) {
-    background-color: rgb(184, 240, 203);;
+    background-color: rgb(184, 240, 203);
 }
 
 
