@@ -77,9 +77,18 @@
 .float_table {
     margin-top: 50px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: table;
+    clear: both;
 }
 
-.row {
+.header, .row {
+    clear: both;
+}
+
+.header::after,
+.row::after {
+    content: "";
+    display: table;
     clear: both;
 }
 
@@ -99,7 +108,7 @@
 .cell {
     float: left;
     border: 1px solid white;
-    width: 8%;
+    width: 100px;
     padding: 10px 0px;
     background-color: #b3d9eb;
     text-align: center;
@@ -224,4 +233,10 @@
 .medium .header-row,
 .medium .btn {
     background-color: #c0392b;
+}
+
+body::after {
+    content: "";
+    display: table;
+    clear: both;
 }
