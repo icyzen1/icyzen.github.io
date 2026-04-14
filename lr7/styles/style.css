@@ -1,0 +1,126 @@
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 400;
+}
+
+.wrap {
+    width: 1200px;
+    height: 550px;
+    border: 1px solid #ccc;
+    margin: 60px auto;
+    font-size: 0;
+}
+
+.product-card {
+    position: relative;
+    display: inline-block;
+    width: calc(25% - 1px);
+    height: 100%;
+    border-right: 1px solid #ccc;
+    font-size: 16px;
+    text-align: center;
+}
+
+.product-card:last-child {
+    border-right: none;
+}
+
+.category {
+    display: block;
+    color: #90a4ae;
+    height: 40px;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+}
+
+.img-container {
+    width: 100%;
+    height: 240px;
+    margin-top: 30px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    align-items: center;
+}
+
+.link {
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgb(50, 176, 238);
+    font-size: 18px;
+    font-weight: 700;
+    padding: 20px;
+}
+
+.old-price {
+    font-weight: 400;
+    text-decoration: line-through;
+}
+
+.price {
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 25px;
+}
+
+.btn {
+    width: 120px;
+    height: 40px;
+    text-transform: uppercase;
+    border: none;
+    background-color: yellow;
+    font-weight: 500;
+}
+
+.btn:hover {
+    background-color: #e3d909;
+}
+
+.btn:active {
+    transform: translateY(3px)
+}
+
+.badge {
+    position: absolute;
+    top: -40px;
+    right: 10px;
+    width: 80px;
+    height: 80px;
+    background:rgb(50, 176, 238);
+    border-radius: 50%;
+    line-height: 80px;
+    color: white;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+.new {
+    background: rgb(50, 195, 50);
+}
+
+.swipe {
+    position: absolute;
+    top: 70px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    background: white;
+}
+
+.left {
+    position: absolute;
+    left: -20px;
+}
+
+.right {
+    right: -20px;
+}
