@@ -29,12 +29,22 @@ h1 {
 
 .category {
     display: block;
+    position: relative;
     color: #90a4ae;
     height: 40px;
     text-transform: uppercase;
     font-weight: 400;
     padding: 15px;
-    border-bottom: 1px solid #ccc;
+}
+
+.category:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+    width: 90%;
+    height: 1px;
+    background-color: #ccc;
 }
 
 .img-container {
