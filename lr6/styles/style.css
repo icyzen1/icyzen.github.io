@@ -96,15 +96,13 @@ button {
     border-radius: 8px;
     font-size: 20px;
     color: #5fa4a9;
-    background: white;
-    text-align: center; 
-    line-height: 40px;  
+    background: #fff;
     margin: 5px;
 }
 
 button:hover {
     background-color: #5fa4a9;
-    color: white;
+    color: #fff;
 }
 
 button:active {
@@ -131,33 +129,25 @@ button:active {
 
 .button_position {
     position: absolute;
-    width: 45px;
-    height: 45px;
-    border: 3px solid #5fa4a9;
-    border-radius: 8px;
-    font-size: 20px;
     color: #5fa4a9;
     background: white;
-    text-align: center; 
-    line-height: 40px;  
     margin: 5px;
 }
 
 
 .container {
-    width: 850px;
+    width: 1000px;
+    height: 500px;
     margin: 0 auto;
     padding: 30px;
     background: #332a28;
 }
 
 .menu-card {
-    background: white;
-    width: 100%;
+    display: flex;
 }
 
 .photo-box {
-    float: left;
     width: 40%;
     position: relative;
     height: 450px;
@@ -172,20 +162,24 @@ button:active {
 .black-label {
     position: absolute;
     bottom: 50px;
-    left: 0;
+    left: -15px;
     background: #000;
     color: #fff;
     padding: 25px;
-    width: 80%;
+    width: 90%;
     text-align: center;
 }
 
+.yellow {
+    color: #ffcc00;
+}
+
 .content-box {
-    float: right;
     width: 60%;
+    height: 410px;
     text-align: center;
     padding-top: 40px;
-    background: white;
+    background: #fff;
 }
 
 .m {
@@ -201,6 +195,17 @@ button:active {
     width: 45%;
     margin-bottom: 50px;
     position: relative;
+    padding-bottom: 15px;
+}
+
+.item::before {
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 1px;
+    bottom: 0;
+    left: 30px;
+    background-color: #ccc;
 }
 
 .item::after {
@@ -209,21 +214,9 @@ button:active {
     width: 10px;
     height: 10px;
     background: #ccc;
-    bottom: -20px;
-    left: 50%;
-    margin-left: -5px;
+    bottom: -5px;
+    left: calc(50% - 5px);
     transform: rotate(45deg);
-}
-
-.item::before {
-    content: "";
-    position: absolute;
-    width: 80px;
-    height: 1px;
-    background: #eee;
-    bottom: -15px;
-    left: 50%;
-    margin-left: -40px;
 }
 
 .item h3 {
@@ -236,19 +229,17 @@ button:active {
     margin: 5px 0;
 }
 
-.yellow {
-    color: #ffcc00;
-}
 
 .footer-btn {
     text-align: right;
-    margin-top: 20px;
 }
 
 .footer-btn a {
     display: inline-block;
     background: #000;
     color: #fff;
+    margin-top: 10px;
     padding: 15px 40px;
     text-decoration: none;
+    font-weight: 600;
 }
