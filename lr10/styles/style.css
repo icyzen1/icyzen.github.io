@@ -1,0 +1,309 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Raleway;
+    background-color: #fff;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.button {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #ee547a;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: #b83b5b;
+    letter-spacing: 0.05em;
+}
+
+header {
+    position: relative;
+    height: 40vh;
+    background: url(../img/jumbotron.jpg);
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: start;
+    background-size: cover;
+    margin-top: 50px;
+}
+
+#topbar {
+    position: absolute;
+    top: -80px;
+    width: 100%;
+}
+
+header .pn {
+    position: absolute;
+    top: 45px;
+    left: 50px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #50a1d3;
+}
+
+.menu-bar {
+    display: inline-block;
+    position: absolute;
+    top: 40px;
+    right: 30px;
+}
+
+summary {
+    display: inline-block;
+    list-style: none;
+    padding: 5px;
+}
+
+.dropdown {
+    display: flex;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    min-width: 150px;
+    flex-direction: column;
+}
+
+.menu-bar a {
+    text-decoration: none;
+    justify-content: center;
+    background-color: #413e3e;
+    color: #ccc;
+}
+
+.menu {
+    display: none;
+}
+
+.menu li {
+    display: inline-block;
+    list-style: none;
+}
+
+.menu a {
+    color: #ccc;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+header .template {
+    color: #fff;
+    font-size: 24px;
+    padding-top: 130px;
+    padding-bottom: 50px;
+}
+
+#services {
+    margin-top: 100px;
+}
+
+.service-card {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.service-card i {
+    color: #ccc;
+    font-size: 40px;
+    padding: 40px 0 20px 0;
+}
+
+.service-card p {
+    color: #ccc;
+    font-size: 14px;
+    margin: 0 auto;
+    max-width: 70%;
+}
+
+#blog h2 {
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.photo {
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.photo img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+}
+
+.description {
+    padding: 40px 15px;
+    text-align: center;
+}
+
+.description h3 {
+    margin: 0 0 20px 0;
+}
+
+.description p {
+    color: #ccc;
+    margin: 0 0 20px 0;
+}
+
+#about h3 {
+    font-size: 24px;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+.text-about p {
+    color: #ccc;
+    padding: 5px 15px;
+}
+
+footer {
+    background-color: #444854;
+    padding-top: 35px;
+    margin-top: 50px;
+}
+
+footer h3 {
+    color: #e7ebf8;
+    font-size: 18px;
+    padding-bottom: 20px;
+    font-weight: 400;
+}
+
+.footer-menu {
+    margin-bottom: 20px;
+}
+
+.footer-menu a {
+    color: #e7ebf8;
+    font-size: 14px;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.copyright {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 0;
+    padding-bottom: 30px;
+}
+
+@media (min-width: 767px) and (max-width: 1216px) {
+    header {
+        margin-top: 60px;
+    }
+
+    header .pn {
+        font-size: 20px;
+        top: 35px;
+        left: 100px;
+    }
+
+    header .template {
+        padding-top: 160px;
+    }
+
+    .menu-bar {
+        display: none;
+    }
+
+    .menu {
+        display: inline-block;
+        position: absolute;
+        top: 40px;
+        right: 50px;
+        font-size: 16px;
+    }
+
+    .service-card {
+        display: inline-block;
+        width: 33%;
+    }
+
+    .photo {
+        display: flex;
+    }
+
+    .photo img {
+        display: block;
+        margin-left: 20px;
+        width: 300px;
+    }
+
+    .description {
+        padding: 40px 20px 20px 40px;
+        text-align: left;
+    }
+}
+
+@media (min-width: 1216px) {
+    header {
+        height: 50vh;
+        margin-top: 75px;
+    }
+
+    header .pn {
+        top: 25px;
+        left: 150px;
+        font-size: 24px;
+    }
+
+    .menu-bar {
+        display: none;
+    }
+
+    .menu {
+        display: inline-block;
+        position: absolute;
+        top: 30px; 
+        right: 150px;
+    }
+
+    .service-card {
+        display: inline-block;
+        width: 33%;
+    }
+
+    .photo {
+        display: flex;
+    }
+
+    .photo img {
+        display: block;
+        width: 300px;
+    }
+
+    .description {
+        padding: 40px 0 20px 40px;
+        text-align: left;
+    }
+
+    footer h3 {
+        font-size: 22px;
+    }
+
+    footer a {
+        font-size: 16px;
+    }
+}
