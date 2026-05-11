@@ -36,11 +36,12 @@ body {
 
 header {
     position: relative;
-    height: 40vh;
+    height: 330px;
     background: url(../img/jumbotron.jpg);
     background-color: #fff;
     background-repeat: no-repeat;
     background-position: start;
+    background-size: cover;
     margin-top: 50px;
 }
 
@@ -106,7 +107,7 @@ summary {
 header .template {
     color: #fff;
     font-size: 24px;
-    padding-top: 100px;
+    padding-top: 130px;
     padding-bottom: 50px;
 }
 
@@ -210,18 +211,18 @@ footer h3 {
 
 @media (min-width: 767px) and (max-width: 1216px) {
     header {
+        height: 330px;
         margin-top: 60px;
     }
 
     header .pn {
-        background-size: cover;
         font-size: 20px;
         top: 35px;
         left: 100px;
     }
 
     header .template {
-        padding-top: 160px;
+        padding-top: 130px;
     }
 
     .menu-bar {
@@ -259,8 +260,7 @@ footer h3 {
 
 @media (min-width: 1216px) {
     header {
-        background-size: cover;
-        height: 50vh;
+        height: 370px;
         margin-top: 75px;
     }
 
