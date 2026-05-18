@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/about.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Tell us more about you</h2>
+            <button class="btn-close">&times;</button>
+        </div>
+        <form action="">
+            <div class="form-group">
+                <label for="name">Complete Name <span class="star">*</span> <span class="sign">&#9432;</span></label>
+                <input type="text" id="name" placeholder="Ex : John Doe" required>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="date">Date of birth <span class="star">*</span></label>
+                    <div class="input-wrapper">
+                        <input type="text" id="date" inputmode="numeric" placeholder="DD / MM / YYYY" maxlength="14"
+                            required>
+                            <span class = "calendar-icon">📅</span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="gender">Gender</label>
+                    <div class="input-wrapper">
+                        <input type="text" id="gender" placeholder="Gender">
+                        <span class="arrow-icon">⌵</span>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="phone-number">Phone number <span class="star">*</span></label>
+                <div class="number-input-wrapper">
+                    <input type="tel" id="phone-number" inputmode="numeric" placeholder="+1 (___) ___ - ____"
+                        maxlength="19" required>
+                    <div class="icons">
+                        <span class="flag">🇨🇦</span>
+                        <span class="arrow">⌵</span>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="website">Website</label>
+                <div class="url-input-wrapper">
+                    <input type="url" id="website" placeholder="www.yourwebsite.com">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="Currency">Currency <span class="sign">&#9432;</span></label>
+                <div id="currency" class="currency">
+                    <div class="currency-cad">CAD</div>
+                    <div class="currency-usd">USD</div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="language">Language <span class="sign">&#9432;</span></label>
+                <select name="language" id="language">
+                    <option value="FR">French</option>
+                    <option value="ENG">English</option>
+                    <option value="SP">Spanish</option>
+                    <option value="BR">Brazilian</option>
+                    <option value="PL">Poland</option>
+                </select>
+            </div>
+            <div class="form-buttons">
+                <button type="button" class="btn btn-cancel">Cancel</button>
+                <button type="submit" class="btn btn-signup">Sign Up</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>

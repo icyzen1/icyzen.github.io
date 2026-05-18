@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lr11</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Edit payment method</h2>
+            <button class="btn-close">&times;</button>
+        </div>
+        <form action="">
+            <div class="form-group">
+                <label for="name">Name on card <span class="sign">&#9432;</span></label>
+                <input type="text" id="name" placeholder="John Doe" required>
+            </div>
+            <div class="form-group">
+                <label for="card-number">Card number</label>
+                <div class="input-wrapper">
+                    <input type="tel" id="card-number" inputmode="numeric" placeholder="1234 1234 1234 1234"
+                        maxlength="19" required>
+                    <span class="card-icon">💳</span>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="card-date">Expiration Date</label>
+                    <input type="text" id="card-date" inputmode="numeric" placeholder="MM / YY" maxlength="7" required>
+                </div>
+                <div class="form-group">
+                    <label for="card-cvc">CVC</label>
+                    <div class="input-wrapper">
+                        <input type="password" id="card-cvc" inputmode="numeric" placeholder="_ _ _" maxlength="3"
+                            required>
+                        <span class="icons">
+                            <span class="view-icon" title="Показати">&#128065;</span>
+                            <span class="help-icon">&#9432;</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="country">Country / Region</label>
+                <select name="country" id="country" required>
+                    <option value="CA">Canada</option>
+                    <option value="US">USA</option>
+                    <option value="UK">Ukraine</option>
+                    <option value="PL">Poland</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="zip">ZIP</label>
+                <input type="text" id="zip" placeholder="A1B 2C3" maxlength="7" required>
+            </div>
+            <div class="form-buttons">
+                <button type="button" class="btn btn-cancel">Cancel</button>
+                <button type="submit" class="btn btn-update">Update</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="container-two">
+        <div class="header">
+            <h2>Sign Up</h2>
+            <button class="btn-close">&times;</button>
+        </div>
+        <form action="">
+            <div class="form-group">
+                <label for="email">Email Address <span class="star">*</span></label>
+                <div class="input-wrapper">
+                    <input type="email" id="email">
+                    <span class="checkmark-icon">&checkmark;</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="username">Username <span class="star">*</span></label>
+                <input type="text" id="username">
+            </div>
+            <div class="form-buttons">
+                <button class="btn btn-cancel">Cancel</button>
+                <button class="btn btn-signup">Sign Up</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="transition-btn">
+        <a href="informational.html">To informational form</a>
+    </div>
+</body>
+
+</html>
